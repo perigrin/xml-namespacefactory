@@ -1,5 +1,8 @@
 
 Revision history for Perl extension XML::NamespaceFactory.
 
+1.0   2010-04-13
+    - re-release original version as 1.0 since after 7 years it's probably stable
+
 0.01  2003-06-29 15:14:34
 	- original version

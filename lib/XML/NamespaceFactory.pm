@@ -1,10 +1,11 @@
 
 package XML::NamespaceFactory;
-
 use strict;
-use vars qw($VERSION $AUTOLOAD);
-$VERSION = '1.00';
 
+# ABSTRACT: Simple factory objects for SAX namespaced names.
+# VERSION
+
+use vars qw($VERSION $AUTOLOAD);
 use overload '""'  => \&toString,
 			 'cmp' => \&cmpString,
 			 '%{}' => \&toHash;
@@ -54,10 +55,6 @@ sub FETCH {
 
 =pod
 
-=head1 NAME
-
-XML::NamespaceFactory - Simple factory objects for SAX namespaced names
-
 =head1 SYNOPSIS
 
   use XML::NamespaceFactory;
@@ -90,20 +87,5 @@ Note that it does not check that the name you ask for is a valid XML
 name. This form is more general but slower.
 
 If this is not clear, hopefully the SYNOPSIS should help :)
-
-=head1 MAINTAINER
-
-Chris Prather <chris@prather.org>
-
-=head1 AUTHOR
-
-Robin Berjon based on a suggestion by Ken MacLeod.
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright 2003-2010 by Robin Berjon
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself. 
 
 =cut

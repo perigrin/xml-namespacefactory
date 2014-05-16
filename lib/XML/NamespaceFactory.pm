@@ -1,6 +1,7 @@
 
 package XML::NamespaceFactory;
 use strict;
+use Carp;
 
 # ABSTRACT: Simple factory objects for SAX namespaced names.
 # VERSION
@@ -13,7 +14,7 @@ use overload '""'  => \&toString,
 sub new {
 	my $class = ref($_[0]) ? ref(shift) : shift;
 	my $ns = shift;
-	die "Parameter \$ns required." unless defined $ns;
+	confess "Parameter \$ns required." unless defined $ns;
 	return bless \$ns;
 }
 

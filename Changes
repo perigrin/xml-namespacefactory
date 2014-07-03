@@ -3,6 +3,8 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+    - Make the constructor confess (kjetilk)
+
 1.01      2014-05-06 22:30:34-05:00 America/Chicago
     - Modernize
 

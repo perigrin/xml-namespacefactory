@@ -1,5 +1,6 @@
 
 use Test;
+use Test::FailWarnings;
 BEGIN { plan tests => 8 };
 use XML::NamespaceFactory;
 ok(1); 

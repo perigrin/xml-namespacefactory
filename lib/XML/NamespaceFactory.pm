@@ -1,6 +1,7 @@
 
 package XML::NamespaceFactory;
 use strict;
+use warnings;
 use Carp;
 
 # ABSTRACT: Simple factory objects for SAX namespaced names.
